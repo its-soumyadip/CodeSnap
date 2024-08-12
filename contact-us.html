@@ -19,6 +19,13 @@
     <!--title-->
     <title>Contact Us - CodeSnap Software & IT Solutions</title>
 
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- sweetalert2 cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap"
@@ -78,16 +85,16 @@
             >
               <!-- Header Logo here -->
               <img
-                src="assets/img/CodeSnap_Logo.svg"
+                src="assets/img/CodeSnap_Logo_white.svg"
                 alt="logo"
                 class="img-fluid logo-white"
               />
+
               <img
                 src="assets/img/CodeSnap_Logo.svg"
                 alt="logo"
                 class="img-fluid logo-color"
               />
-            </a>
 
             <a
               class="navbar-toggler position-absolute right-0 border-0"
@@ -115,9 +122,9 @@
 
                 <li><a href="/" class="nav-link">About Us</a></li>
 
-                <li>
+                <!-- <li>
                   <a href="contact-us.html" class="nav-link">Contact Us</a>
-                </li>
+                </li> -->
               </ul>
             </div>
 
@@ -164,13 +171,14 @@
                   </span>
                 </label>
               </span>
-              <a
+              <!-- <a
                 href="login.html"
                 class="btn btn-link text-decoration-none me-2"
                 >Sign In</a
-              >
-              <a href="request-demo.html" class="btn btn-primary"
-                >Get Started</a
+              > -->
+              <span >&nbsp; &nbsp; &nbsp; &nbsp;</span>
+              <a href="#contactFormSection" class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16"
+                >Contact Us</a
               >
             </div>
           </div>
@@ -221,16 +229,14 @@
 
               <li><a href="/" class="nav-link">About Us</a></li>
 
-              <li>
+              <!-- <li>
                 <a href="contact-us.html" class="nav-link">Contact Us</a>
-              </li>
+              </li> -->
             </ul>
             <div class="action-btns mt-4 ps-3">
-              <a href="login.html" class="btn btn-outline-primary me-2"
-                >Sign In</a
-              >
-              <a href="request-demo.html" class="btn btn-primary"
-                >Get Started</a
+
+              <a href="contact-us.html" class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16"
+                >Contact Us</a
               >
             </div>
           </div>
@@ -271,8 +277,9 @@
               <div
                 class="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100"
               >
-                <span class="fas fa-comment fa-3x text-primary"></span>
-                <div class="contact-promo-info mb-4">
+                <span class="fa-solid fa-comments fa-3x text-warning h-25"></span>
+                
+                <div class="contact-promo-info mb-4 h-50">
                   <h5>Chat with us</h5>
                   <p>
                     We've got live Social Experts waiting to help you
@@ -280,17 +287,20 @@
                     <strong>9am to 5pm EST.</strong>
                   </p>
                 </div>
-                <a class="btn btn-link mt-auto" onclick="OpenChat()"
+                
+                <div class="h-25">
+                  <a class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16 " onclick="OpenChat()"
                   >Chat with us</a
                 >
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
               <div
                 class="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100"
               >
-                <span class="fas fa-envelope fa-3x text-primary"></span>
-                <div class="contact-promo-info mb-4">
+                <span class="fa-solid fa-at fa-3x text-warning h-25"></span>
+                <div class="contact-promo-info mb-4 h-50">
                   <h5>Email Us</h5>
                   <p>
                     Simple drop us an email at
@@ -298,19 +308,22 @@
                     receive a reply within 24 hours
                   </p>
                 </div>
-                <a
-                  href="codesnap.business@gmail.com"
-                  class="btn btn-primary mt-auto"
-                  >Email Us</a
+                <div class="h-25">
+                  <a class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16 " onclick="OpenChat()"
+                  >Chat with us</a
                 >
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
               <div
                 class="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100"
               >
-                <span class="fas fa-phone fa-3x text-primary"></span>
-                <div class="contact-promo-info mb-4">
+
+             
+                <span class="fa-solid fa-headset fa-3x text-warning h-25"></span>
+
+                <div class="contact-promo-info mb-4 h-50">
                   <h5>Give us a call</h5>
                   <p>
                     Give us a ring.Our Experts are standing by
@@ -318,9 +331,11 @@
                     <strong>9am to 10pm IST.</strong>
                   </p>
                 </div>
-                <a href="tel:00-976-561-008" class="btn btn-link mt-auto"
+                <div class="h-25">
+                  <a href="tel:9064086231" class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16"
                   >+91 9064086231</a
                 >
+                </div>
               </div>
             </div>
           </div>
@@ -330,6 +345,7 @@
 
       <!--contact us form start-->
       <section
+      id="contactFormSection"
         class="contact-us-form pt-60 pb-120"
         style="
           background: url('assets/img/shape/contact-us-bg.svg') no-repeat center
@@ -347,9 +363,10 @@
                 </p>
               </div>
               <form
-                action="https://contactapp-7qti.onrender.com/contact"
+                action="https://Codesnap.pythonanywhere.com/api/contacts/"
                 method="POST"
                 class="register-form"
+                id="contact-form"
               >
                 <div class="row">
                   <div class="col-sm-6">
@@ -429,7 +446,11 @@
                     </div>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary mt-4">
+                <button
+                  type="button"
+                  class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16"
+                  id="contact-submit"
+                >
                   Get in Touch
                 </button>
               </form>
@@ -437,7 +458,7 @@
             <div class="col-lg-5 col-md-10">
               <div class="contact-us-img">
                 <img
-                  src="assets/img/contact-us-img-2.svg"
+                  src="assets/img/Codesnap_contact_us.svg"
                   alt="contact us"
                   class="img-fluid"
                 />
@@ -449,255 +470,178 @@
       <!--contact us form end-->
 
       <!--footer section start-->
-      <!--footer section start-->
-      <footer class="footer-section">
-        <!--footer top start-->
-        <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
-        <div
-          class="footer-top bg-dark text-white ptb-120"
-          style="
-            background: url('assets/img/page-header-bg.svg') no-repeat bottom
-              right;
-          "
-        >
+
+      <div
+        class="it-company-footer it-company-bg-two pt-120 position-relative z-1"
+      >
+        <div class="rm-footer-top">
           <div class="container">
             <div class="row justify-content-between">
-              <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
+              <div class="col-xl-3 col-lg-5">
                 <div class="footer-single-col">
-                  <div class="footer-single-col mb-4">
-                    <!-- Footer Logo here -->
-
-                    <img
-                      src="assets/img/CodeSnap_Logo.svg"
-                      alt="logo"
-                      class="img-fluid logo-white"
-                    />
-                    <img
-                      src="assets/img/CodeSnap_Logo.svg"
-                      alt="logo"
-                      class="img-fluid logo-color"
-                    />
-                  </div>
-                  <p>
-                    Our latest news, articles, and resources, we will sent to
-                    your inbox weekly.
+                  <!-- Footer Logo here -->
+                  <img src="assets/img/CodeSnap_Logo.svg" alt="" />
+                  <p class="flh-24 mt-20 mb-30">
+                    At CodeSnap, we expertly deliver client-focused
+                    functionalities and optimize resource allocation, ensuring
+                    seamless integration of software and IT solutions.
                   </p>
-
-                  <form
-                    class="newsletter-form position-relative d-block d-lg-flex d-md-flex"
+                  <ul
+                    class="list-unstyled list-inline footer-social-list d-flex mb-0"
                   >
+                    <li class="list-inline-item">
+                      <a
+                        href="https://www.facebook.com/profile.php?id=61563803588938&mibextid=ZbWKwL"
+                        target="_blank"
+                        class="bgc-white risk-color"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="bgc-white risk-color"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/company/thecodesnap/"
+                        class="bgc-white risk-color"
+                        ><i class="fab fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        href="https://wa.me/9064086231?text=Hello%20Team%20CodeSnap"
+                        target="_blank"
+                        class="bgc-white risk-color"
+                        ><i class="fab fa-whatsapp"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-5">
+                <div class="footer-single-col pl-40">
+                  <h3 class="it-company-color">Pages</h3>
+                  <ul class="list-unstyled footer-nav-list mb-lg-0">
+                    <li>
+                      <a href="#" class="text-decoration-none">Home</a>
+                    </li>
+                    <li>
+                      <a href="services.html" class="text-decoration-none"
+                        >Services</a
+                      >
+                    </li>
+                    <li>
+                      <a href="blog.html" class="text-decoration-none"
+                        >About Us</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="contact-us.html" class="text-decoration-none"
+                        >Contact us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-5">
+                <div class="footer-single-col pr-20">
+                  <h3 class="it-company-color">Contact</h3>
+                  <ul class="list-unstyled footer-nav-list mb-lg-0">
+                    <li>
+                      <a
+                        href="pricing.html"
+                        class="text-decoration-none d-flex align-items-center gap-4"
+                      >
+                        <svg
+                          width="16"
+                          height="13"
+                          viewBox="0 0 16 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            opacity="0.35"
+                            d="M13.6 12.8H2.4C1.0744 12.8 0 11.7256 0 10.4V2.4C0 1.0744 1.0744 0 2.4 0H13.6C14.9256 0 16 1.0744 16 2.4V10.4C16 11.7256 14.9256 12.8 13.6 12.8Z"
+                            fill="#F55F4E"
+                          />
+                          <path
+                            d="M6.3536 6.21202L0 2.4C0 1.0744 1.0744 0 2.4 0H13.6C14.9256 0 16 1.0744 16 2.4L9.6464 6.21202C8.63278 6.82002 7.36722 6.82002 6.3536 6.21202Z"
+                            fill="#F55F4E"
+                          />
+                        </svg>
+                        <span class="">codesnap.business@gmail.com</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="pricing.html"
+                        class="text-decoration-none d-flex align-items-center gap-4"
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.1905 12.2287C14.7439 12.1204 14.2939 12.3995 14.1881 12.847C14.0814 13.2945 14.3589 13.7437 14.8064 13.8495C17.3946 14.4636 18.333 15.3719 18.333 15.8336C18.333 16.8294 15.0097 18.3336 9.99981 18.3336C4.99073 18.3336 1.66665 16.8294 1.66665 15.8336C1.66665 15.3719 2.60581 14.4636 5.1924 13.8495C5.64071 13.7437 5.91739 13.2945 5.81071 12.847C5.70489 12.3995 5.2549 12.1203 4.80823 12.2287C1.70747 12.9637 0 14.2436 0 15.8336C0 18.5686 5.03159 20.0002 9.99981 20.0002C14.9689 20.0002 19.9996 18.5686 19.9996 15.8336C19.9996 14.2436 18.2922 12.9637 15.1905 12.2287Z"
+                            fill="#F55F4E"
+                          />
+                          <path
+                            d="M10.0013 6.66759C10.4613 6.66759 10.8346 6.29427 10.8346 5.83428C10.8346 5.37429 10.4613 5.00098 10.0013 5.00098C9.54128 5.00098 9.16797 5.37429 9.16797 5.83428C9.16797 6.29427 9.54128 6.66759 10.0013 6.66759Z"
+                            fill="#F55F4E"
+                          />
+                          <path
+                            d="M8.91603 15.5277L9.25521 16.206C9.39688 16.4885 9.6852 16.6669 10.001 16.6669C10.3168 16.6669 10.6052 16.4885 10.7468 16.206L11.4651 14.7694C12.3393 13.0202 13.4176 11.3261 14.4601 9.68781L14.9351 8.94032C15.5234 8.01034 15.8342 6.93618 15.8342 5.8337C15.8342 4.17373 15.1234 2.58708 13.8843 1.48046C12.646 0.374663 10.9802 -0.155288 9.31939 0.039708C6.72608 0.334702 4.58448 2.42298 4.2253 5.00461C4.01281 6.53459 4.3953 8.05374 5.3011 9.28371C6.71444 11.1986 7.81773 13.3295 8.91603 15.5277ZM10.001 3.33379C11.3793 3.33379 12.501 4.45545 12.501 5.83374C12.501 7.21203 11.3793 8.33369 10.001 8.33369C8.62272 8.33369 7.50106 7.21203 7.50106 5.83374C7.50106 4.45545 8.62272 3.33379 10.001 3.33379Z"
+                            fill="#F55F4E"
+                          />
+                        </svg>
+                        NewTown, Kolkata, West Bengal, 700135
+                      </a>
+                    </li>
+                    <li class="mt-30">
+                      <a href="blog-single.html" class="">View Google Map</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-5">
+                <div class="footer-single-col">
+                  <h3 class="it-company-color">Newsletter</h3>
+                  <p class="flh-24">
+                    Sign up for our latest news &amp; articles. We won’t give
+                    you spam mails.
+                  </p>
+                  <form class="ca-two-newsletter-form mt-40 position-relative">
                     <input
                       type="text"
-                      class="input-newsletter form-control me-2"
+                      class="form-control"
                       placeholder="Enter your email"
                       name="email"
                       required=""
                       autocomplete="off"
                     />
-                    <input
-                      type="submit"
-                      value="Subscribe"
-                      data-wait="Please wait..."
-                      class="btn btn-primary mt-3 mt-lg-0 mt-md-0"
-                    />
+                    <button class="btn"></button>
                   </form>
-                  <div class="ratting-wrap mt-4">
-                    <h6 class="mb-0">10/10 Overall rating</h6>
-                    <ul class="list-unstyled rating-list list-inline mb-0">
-                      <li class="list-inline-item">
-                        <i class="fas fa-star text-warning"></i>
-                      </li>
-                      <li class="list-inline-item">
-                        <i class="fas fa-star text-warning"></i>
-                      </li>
-                      <li class="list-inline-item">
-                        <i class="fas fa-star text-warning"></i>
-                      </li>
-                      <li class="list-inline-item">
-                        <i class="fas fa-star text-warning"></i>
-                      </li>
-                      <li class="list-inline-item">
-                        <i class="fas fa-star text-warning"></i>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-lg-7 mt-4 mt-md-0 mt-lg-0">
-                <div class="row">
-                  <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
-                    <div class="footer-single-col">
-                      <h3>Primary Pages</h3>
-                      <ul class="list-unstyled footer-nav-list mb-lg-0">
-                        <li>
-                          <a href="index.html" class="text-decoration-none"
-                            >Home</a
-                          >
-                        </li>
-                        <li>
-                          <a href="about-us.html" class="text-decoration-none"
-                            >About Us</a
-                          >
-                        </li>
-                        <li>
-                          <a href="services.html" class="text-decoration-none"
-                            >Services</a
-                          >
-                        </li>
-                        <li>
-                          <a href="career.html" class="text-decoration-none"
-                            >Career</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="integrations.html"
-                            class="text-decoration-none"
-                            >Integrations</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="integration-single.html"
-                            class="text-decoration-none"
-                            >Integration Single</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
-                    <div class="footer-single-col">
-                      <h3>Pages</h3>
-                      <ul class="list-unstyled footer-nav-list mb-lg-0">
-                        <li>
-                          <a href="pricing.html" class="text-decoration-none"
-                            >Pricing</a
-                          >
-                        </li>
-                        <li>
-                          <a href="blog.html" class="text-decoration-none"
-                            >Blog</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="blog-single.html"
-                            class="text-decoration-none"
-                            >Blog Details</a
-                          >
-                        </li>
-                        <li>
-                          <a href="contact-us.html" class="text-decoration-none"
-                            >Contact</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="career-single.html"
-                            class="text-decoration-none"
-                            >Career Single</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="service-single.html"
-                            class="text-decoration-none"
-                            >Services Single</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
-                    <div class="footer-single-col">
-                      <h3>Template</h3>
-                      <ul class="list-unstyled footer-nav-list mb-lg-0">
-                        <li>
-                          <a href="contact-us.html" class="text-decoration-none"
-                            >Contact</a
-                          >
-                        </li>
-                        <li>
-                          <a href="support.html" class="text-decoration-none"
-                            >Support</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="support-single.html"
-                            class="text-decoration-none"
-                            >Support Single</a
-                          >
-                        </li>
-                        <li>
-                          <a href="team.html" class="text-decoration-none"
-                            >Our Team</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="client-review.html"
-                            class="text-decoration-none"
-                            >Customer Review</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="career-single.html"
-                            class="text-decoration-none"
-                            >Career Single</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!--footer top end-->
+        <div class="rm-footer-bottom text-center pt-80 pb-30">
+          <p class="it-company-color fs-17 ff-risk-pri flh-24 mb-0">
+            Copyright &copy; <span id="current-year"></span> All Rights Reserved
+            by
+            <a class="it-company-color fw-700" href="/">CodeSnap</a>
+          </p>
+        </div>
+      </div>
 
-        <!--footer bottom start-->
-        <div class="footer-bottom bg-dark text-white py-4">
-          <div class="container">
-            <div class="row justify-content-between align-items-center">
-              <div class="col-md-7 col-lg-7">
-                <div class="copyright-text">
-                  <p class="it-company-color fs-17 ff-risk-pri flh-24 mb-0">
-                    Copyright &copy; <span id="current-year"></span> All Rights
-                    Reserved by
-                    <a class="it-company-color fw-700" href="">CodeSnap</a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <div
-                  class="footer-single-col text-start text-lg-end text-md-end"
-                >
-                  <ul class="list-unstyled list-inline footer-social-list mb-0">
-                    <li class="list-inline-item">
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#"><i class="fab fa-dribbble"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#"><i class="fab fa-github"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--footer bottom end-->
-      </footer>
-      <!--footer section end-->
       <!--footer section end-->
     </div>
 
@@ -730,5 +674,47 @@
         }, 12000); // 12000 milliseconds = 12 seconds
       }
     </script>
+
+
+<!-- Contact Form Submission using Ajax -->
+<script>
+$(document).ready(function () {
+  $("#contact-submit").click(function (e) {
+    e.preventDefault(); // Prevent the default form submission
+    let form = $("#contact-form");
+    let url = form.attr("action");
+    let data = form.serialize();
+
+    $.ajax({
+      url: url,
+      type: "POST",
+      data: data,
+      success: function (response) {
+        Swal.fire({
+          title: "Your message has been sent!",
+          text: "Thank you for reaching out to us. We will get back to you shortly.",
+          icon: "success",
+        });
+        form.trigger("reset"); // Clear the form
+      },
+      error: function (xhr) {
+        let errorMessage = "An error occurred. Please try again.";
+        if (xhr.responseJSON && xhr.responseJSON.detail) {
+          errorMessage = xhr.responseJSON.detail;
+        } else if (xhr.responseJSON) {
+          errorMessage = Object.values(xhr.responseJSON).join("<br>");
+        }
+        Swal.fire({
+          title: "Error",
+          html: errorMessage,
+          icon: "error",
+        });
+      },
+    });
+  });
+});
+
+</script>
+<!-- contact form end -->
   </body>
 </html>
