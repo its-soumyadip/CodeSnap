@@ -67322,8 +67322,8 @@ span.mk-subtitle {
 }
 
 .risk-btn-hover:hover {
-    background-color: #fff;
-    color: #0c7df8
+    cursor: pointer;
+    color: #0c7df8;
 }
 
 .risk-outline-btn-hover:hover {
