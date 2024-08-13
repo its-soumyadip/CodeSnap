@@ -68499,7 +68499,7 @@ span.mk-subtitle {
 
 .it-company-footer .rm-footer-top .footer-single-col li a {
     color: #666 !important;
-    font-weight: 400
+    /* font-weight: 400 */
 }
 
 .it-company-footer .rm-footer-top .footer-single-col li a:hover {
