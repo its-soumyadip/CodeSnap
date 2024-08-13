@@ -1,24 +1,46 @@
 .services-heading {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .services-heading::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 4px;
-    bottom: -7px;
-    left: 0;
-    background-color: #FFBE3D; /* Change to your preferred underline color */
-    transform-origin: bottom left;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .services-heading:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.services-heading::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: -7px;
+  left: 0;
+  background-color: #FFBE3D;
+  /* Change to your preferred underline color */
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.services-heading:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.PrivacyPolicySection {
+  margin: 110px;
+}
+
+.privacy_heading {
+  background-color: #FFBE3D;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.para {
+  font-size: 17px;
+}
+
+.list_items {
+  font-size: 17px;
+  margin-left: 20px;
+}
