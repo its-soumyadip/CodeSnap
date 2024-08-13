@@ -52,7 +52,7 @@
   }
 
   .privacy_heading {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .para,
@@ -68,7 +68,7 @@
   }
 
   .privacy_heading {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .para,
@@ -84,7 +84,136 @@
   }
 
   .privacy_heading {
-    font-size: 32px;
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+}
+
+.TermsAndConditionsSection {
+  margin: 100px 10px;
+}
+
+
+.terms_heading {
+  background-color: #FFBE3D;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+  .TermsAndConditionsSection {
+    margin: 100px 30px;
+  }
+
+  .terms_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .TermsAndConditionsSection {
+    margin: 100px 50px;
+  }
+
+  .terms_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .TermsAndConditionsSection {
+    margin: 120px 80px;
+  }
+
+  .terms_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.CookiePolicySection {
+  margin: 100px 10px;
+}
+
+
+.cookie_heading {
+  background-color: #FFBE3D;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+  .CookiePolicySection {
+    margin: 100px 30px;
+  }
+
+  .cookie_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .CookiePolicySection {
+    margin: 100px 50px;
+  }
+
+  .cookie_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .CookiePolicySection {
+    margin: 120px 80px;
+  }
+
+  .cookie_heading {
+    font-size: 25px;
   }
 
   .para,

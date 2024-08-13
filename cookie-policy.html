@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!--meta-->
     <meta name="description" content="CodeSnap - Technology & IT Solutions" />
     <meta name="author" content="ThemeTags" />
 
@@ -17,14 +18,7 @@
     />
 
     <!--title-->
-    <title>Contact Us - CodeSnap Software & IT Solutions</title>
-
-    <!-- jquery cdn -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
-    <!-- sweetalert2 cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>CodeSnap - Technology & IT Solutions</title>
 
     <!-- Font -->
     <link
@@ -71,10 +65,9 @@
       </div>
     </div>
     <!--preloader end-->
-    <!--main content wrapper start-->
     <div class="main-wrapper">
       <!--header section start-->
-      <header class="main-header w-100 z-10">
+      <header class="main-header header-fixed-two w-100 z-10">
         <nav class="navbar navbar-expand-xl navbar-light sticky-header">
           <div
             class="container d-flex align-items-center justify-content-lg-between position-relative"
@@ -95,6 +88,9 @@
                 alt="logo"
                 class="img-fluid logo-color"
               />
+
+              <!-- <span class="fw-bolder text-warning">CodeSnap</span> -->
+            </a>
 
             <a
               class="navbar-toggler position-absolute right-0 border-0"
@@ -122,9 +118,9 @@
 
                 <li><a href="/" class="nav-link">About Us</a></li>
 
-                <!-- <li>
+                <li>
                   <a href="contact-us.html" class="nav-link">Contact Us</a>
-                </li> -->
+                </li>
               </ul>
             </div>
 
@@ -132,18 +128,18 @@
               class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block"
             >
               <!-- <a href="javascript:void(0)" class="btn btn-link p-1 tt-theme-toggle">
-                            <div class="tt-theme-light" data-bs-toggle="tooltip" data-bs-placement="left"
-                                 data-bs-title="Light"><i class="flaticon-sun-1 fs-lg"></i></div>
-                            <div class="tt-theme-dark" data-bs-toggle="tooltip" data-bs-placement="left"
-                                 data-bs-title="Dark"><i class="flaticon-moon-1 fs-lg"></i></div>
-                          </a> -->
+      					  <div class="tt-theme-light" data-bs-toggle="tooltip" data-bs-placement="left"
+      					       data-bs-title="Light"><i class="flaticon-sun-1 fs-lg"></i></div>
+      					  <div class="tt-theme-dark" data-bs-toggle="tooltip" data-bs-placement="left"
+      					       data-bs-title="Dark"><i class="flaticon-moon-1 fs-lg"></i></div>
+      					</a> -->
 
               <!-- <span class="btn btn-link p-1 tt-theme-toggle">
-                               <span class="tt-theme-light" data-bs-toggle="tooltip" data-bs-placement="left"
-                                    data-bs-title="Light"><i class="flaticon-sun-1 fs-lg"></i></span>
-                               <span class="tt-theme-dark" data-bs-toggle="tooltip" data-bs-placement="left"
-                                    data-bs-title="Dark"><i class="flaticon-moon-1 fs-lg"></i></span>
-                          </span> -->
+      					     <span class="tt-theme-light" data-bs-toggle="tooltip" data-bs-placement="left"
+      					          data-bs-title="Light"><i class="flaticon-sun-1 fs-lg"></i></span>
+      					     <span class="tt-theme-dark" data-bs-toggle="tooltip" data-bs-placement="left"
+      					          data-bs-title="Dark"><i class="flaticon-moon-1 fs-lg"></i></span>
+      					</span> -->
 
               <span class="form-check d-inline-block">
                 <input
@@ -171,14 +167,15 @@
                   </span>
                 </label>
               </span>
-              <!-- <a
+              <a
                 href="login.html"
                 class="btn btn-link text-decoration-none me-2"
                 >Sign In</a
-              > -->
-              <span >&nbsp; &nbsp; &nbsp; &nbsp;</span>
-              <a href="#contactFormSection" class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16"
-                >Contact Us</a
+              >
+              <a
+                href="contact-us.html#contactFormSection"
+                class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16"
+                >Get Started</a
               >
             </div>
           </div>
@@ -200,14 +197,11 @@
                 alt="logo"
                 class="img-fluid logo-white"
               />
-              <!-- 
-              <img
+              <!-- <img
                 src="assets/img/CodeSnap_Logo.svg"
                 alt="logo"
                 class="img-fluid logo-color"
               /> -->
-
-              <!-- <span class="fw-bolder text-warning">CodeSnap</span> -->
             </a>
             <button
               type="button"
@@ -229,15 +223,12 @@
 
               <li><a href="/" class="nav-link">About Us</a></li>
 
-              <!-- <li>
+              <li>
                 <a href="contact-us.html" class="nav-link">Contact Us</a>
-              </li> -->
+              </li>
             </ul>
             <div class="action-btns mt-4 ps-3">
-
-              <a href="contact-us.html" class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16"
-                >Contact Us</a
-              >
+              <a href="contact-us.html" class="btn btn-primary">Contact Us</a>
             </div>
           </div>
         </div>
@@ -245,227 +236,167 @@
       </header>
       <!--header section end-->
 
-      <!--page header section start-->
-      <section
-        class="page-header position-relative overflow-hidden ptb-120 bg-dark"
-        style="
-          background: url('assets/img/page-header-bg.svg') no-repeat bottom left;
-        "
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <h1 class="display-5 fw-bold">Contact Us</h1>
-              <p class="lead">
-                Effortlessly deliver tailored software solutions by leveraging CodeSnap’s innovative approach and unmatched technical expertise.
+      <section class="CookiePolicySection">
+        <div>
+          <div>
+            <h4 class="text-center cookie_heading">Cookie Policy</h4>
+          </div>
+          <div class="main-section">
+            <div class="container">
+              <h5 class="mt-2 mb-2">Effective Date: 1st January 2023</h5>
+
+              <h6 class="mt-2">Introduction :</h6>
+              <p class="para">
+                CodeSnap ("we", "us", or "our") uses cookies and similar
+                tracking technologies on our website and online services to
+                enhance user experience, analyze website performance, and
+                personalize content. This Cookie Policy explains what cookies
+                are, how we use them, and your choices regarding cookies.
+              </p>
+
+              <h6 class="mt-2">What Are Cookies? :</h6>
+              <p class="para">
+                Cookies are small text files that are stored on your device
+                (computer, tablet, or mobile) when you visit a website. They are
+                widely used to make websites work efficiently, as well as to
+                provide information to the website owner.
+              </p>
+
+              <h6 class="mt-2">Types of Cookies We Use :</h6>
+              <p class="para">
+                We use the following types of cookies on our website:
+              </p>
+              <ul>
+                <li class="list_items">
+                  <strong>Essential Cookies:</strong> These cookies are
+                  necessary for the website to function correctly. They enable
+                  basic features such as page navigation, secure login, and
+                  access to secure areas of the website.
+                </li>
+                <li class="list_items">
+                  <strong>Performance Cookies:</strong> These cookies collect
+                  information about how visitors use our website, such as which
+                  pages are visited most often and if they receive error
+                  messages. This data helps us improve the website's performance
+                  and user experience.
+                </li>
+                <li class="list_items">
+                  <strong>Functional Cookies:</strong> These cookies allow the
+                  website to remember choices you make, such as your language
+                  preference or login details. They provide enhanced features
+                  and a more personalized experience.
+                </li>
+                <li class="list_items">
+                  <strong>Targeting/Advertising Cookies:</strong> These cookies
+                  are used to deliver relevant ads to you and track the
+                  effectiveness of our advertising campaigns. They may also be
+                  used to limit the number of times you see an ad.
+                </li>
+              </ul>
+
+              <h6 class="mt-2">How We Use Cookies :</h6>
+              <p class="para">We use cookies to:</p>
+              <ul>
+                <li class="list_items">
+                  <strong>Improve User Experience:</strong> Cookies help us
+                  understand how you interact with our website and allow us to
+                  improve its functionality and performance.
+                </li>
+                <li class="list_items">
+                  <strong>Personalize Content:</strong> We may use cookies to
+                  tailor the content and information that we display to you
+                  based on your interests and preferences.
+                </li>
+                <li class="list_items">
+                  <strong>Analyze Website Performance:</strong> Cookies allow us
+                  to monitor the performance of our website and identify areas
+                  for improvement.
+                </li>
+                <li class="list_items">
+                  <strong>Provide Targeted Advertising:</strong> We may use
+                  cookies to deliver personalized advertisements and track the
+                  effectiveness of our marketing efforts.
+                </li>
+              </ul>
+
+              <h6 class="mt-2">Third-Party Cookies :</h6>
+              <p class="para">
+                In addition to our own cookies, we may also use third-party
+                cookies to report usage statistics of the website and deliver
+                advertisements on and through the website. These third-party
+                cookies may collect information about your online activities
+                over time and across different websites.
+              </p>
+
+              <h6 class="mt-2">Your Choices Regarding Cookies :</h6>
+              <p class="para">
+                You have the right to choose whether to accept or reject
+                cookies. You can manage your cookie preferences through your
+                browser settings. Most web browsers allow you to control cookies
+                through their settings. You can choose to block or delete
+                cookies, but please note that if you do so, some parts of our
+                website may not function properly.
+              </p>
+              <p class="para">
+                To learn more about how to manage and delete cookies, visit the
+                help pages of your browser:
+              </p>
+              <ul>
+                <li>
+                  <a
+                    href="https://support.google.com/chrome/answer/95647?hl=en"
+                    target="_blank"
+                    >Google Chrome</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
+                    target="_blank"
+                    >Mozilla Firefox</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://support.apple.com/en-us/HT201265"
+                    target="_blank"
+                    >Safari</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://support.microsoft.com/en-us/help/4027947/microsoft-edge-delete-cookies"
+                    target="_blank"
+                    >Microsoft Edge</a
+                  >
+                </li>
+              </ul>
+
+              <h6 class="mt-2">Changes to This Cookie Policy :</h6>
+              <p class="para">
+                We may update this Cookie Policy from time to time to reflect
+                changes in our practices or for other operational, legal, or
+                regulatory reasons. We will notify you of any significant
+                changes by posting the updated policy on our website.
+              </p>
+
+              <h6 class="mt-2">Contact Us :</h6>
+              <p class="para">
+                If you have any questions about this Cookie Policy or our use of
+                cookies, please contact us at:
+              </p>
+
+              <h5>CodeSnap</h5>
+              <p class="m-0">
+                <strong>Email: codesnap.business@gmail.com</strong>
+              </p>
+              <p class="m-0">
+                <strong>Address: NewTown, Kolkata, West Bengal, 700135</strong>
               </p>
             </div>
           </div>
-          <div
-            class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"
-          ></div>
         </div>
       </section>
-      <!--page header section end-->
-
-      <!--contact us promo section start-->
-      <section class="contact-promo ptb-120">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-              <div
-                class="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100"
-              >
-                <span class="fa-solid fa-comments fa-3x text-warning h-25"></span>
-                
-                <div class="contact-promo-info mb-4 h-50">
-                  <h5>Chat with us</h5>
-                  <p>
-                    We've got live Social Experts waiting to help you
-                    <strong>monday to friday</strong> from
-                    <strong>9am to 5pm EST.</strong>
-                  </p>
-                </div>
-                
-                <div class="h-25">
-                  <a class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16 " onclick="OpenChat()"
-                  >Chat with us</a
-                >
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-              <div
-                class="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100"
-              >
-                <span class="fa-solid fa-at fa-3x text-warning h-25"></span>
-                <div class="contact-promo-info mb-4 h-50">
-                  <h5>Email Us</h5>
-                  <p>
-                    Simple drop us an email at
-                    <strong>codesnap.business@gmail.com</strong> and you'll
-                    receive a reply within 24 hours
-                  </p>
-                </div>
-                <div class="h-25">
-                  <a class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16 " onclick="OpenChat()"
-                  >Chat with us</a
-                >
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-              <div
-                class="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100"
-              >
-
-             
-                <span class="fa-solid fa-headset fa-3x text-warning h-25"></span>
-
-                <div class="contact-promo-info mb-4 h-50">
-                  <h5>Give us a call</h5>
-                  <p>
-                    Give us a ring.Our Experts are standing by
-                    <strong>Monday to Sunday</strong> from
-                    <strong>9am to 10pm IST.</strong>
-                  </p>
-                </div>
-                <div class="h-25">
-                  <a href="tel:9064086231" class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16"
-                  >+91 9064086231</a
-                >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--contact us promo section end-->
-
-      <!--contact us form start-->
-      <section
-      id="contactFormSection"
-        class="contact-us-form pt-60 pb-120"
-        style="
-          background: url('assets/img/shape/contact-us-bg.svg') no-repeat center
-            bottom;
-        "
-      >
-        <div class="container">
-          <div class="row justify-content-lg-between align-items-center">
-            <div class="col-lg-6 col-md-8">
-              <div class="section-heading">
-                <h2>Talk to Our Sales & Marketing Department Team</h2>
-                <p>
-                  Have questions or need assistance? Reach out to us anytime. We're here to help with any inquiries or support you need.
-                </p>
-              </div>
-              <form
-                action="https://Codesnap.pythonanywhere.com/api/contacts/"
-                method="POST"
-                class="register-form"
-                id="contact-form"
-              >
-                <div class="row">
-                  <div class="col-sm-6">
-                    <label for="firstName" class="mb-1"
-                      >First name <span class="text-danger">*</span></label
-                    >
-                    <div class="input-group mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="first_name"
-                        id="firstName"
-                        required
-                        placeholder="First name"
-                        aria-label="First name"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <label for="lastName" class="mb-1">Last name</label>
-                    <div class="input-group mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="last_name"
-                        id="lastName"
-                        placeholder="Last name"
-                        aria-label="Last name"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <label for="phone" class="mb-1"
-                      >Phone <span class="text-danger">*</span></label
-                    >
-                    <div class="input-group mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="phone"
-                        name="mobile"
-                        required
-                        placeholder="Phone"
-                        aria-label="Phone"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <label for="email" class="mb-1"
-                      >Email<span class="text-danger">*</span></label
-                    >
-                    <div class="input-group mb-3">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        name="email"
-                        required
-                        placeholder="Email"
-                        aria-label="Email"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <label for="yourMessage" class="mb-1"
-                      >Message <span class="text-danger">*</span></label
-                    >
-                    <div class="input-group mb-3">
-                      <textarea
-                        class="form-control"
-                        id="yourMessage"
-                        name="message"
-                        required
-                        placeholder="How can we help you?"
-                        style="height: 120px"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16"
-                  id="contact-submit"
-                >
-                  Get in Touch
-                </button>
-              </form>
-            </div>
-            <div class="col-lg-5 col-md-10">
-              <div class="contact-us-img">
-                <img
-                  src="assets/img/Codesnap_contact_us.svg"
-                  alt="contact us"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--contact us form end-->
 
       <!-- Footer -->
       <div
@@ -554,7 +485,9 @@
                       >
                     </li>
                     <li>
-                      <a href="terms-conditions.html" class="text-decoration-none"
+                      <a
+                        href="terms-conditions.html"
+                        class="text-decoration-none"
                         >Terms & Conditions</a
                       >
                     </li>
@@ -664,66 +597,14 @@
     <script src="assets/js/vendors/massonry.min.js"></script>
     <script src="assets/js/app.js"></script>
     <!--endbuild-->
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+
     <script
       src="//code.tidio.co/1ca4enrokl1nptm5qfqyxgcasbqse1zg.js"
       async
     ></script>
-
-    <script>
-      document.getElementById("current-year").textContent =
-        new Date().getFullYear();
-      function OpenChat() {
-        // Get the button element
-
-        // Use setTimeout to add a delay
-        setTimeout(() => {
-          const btn = document.getElementById("button");
-          console.log("Button is", btn);
-          // Click the button after 12 seconds
-        }, 12000); // 12000 milliseconds = 12 seconds
-      }
-    </script>
-
-
-<!-- Contact Form Submission using Ajax -->
-<script>
-$(document).ready(function () {
-  $("#contact-submit").click(function (e) {
-    e.preventDefault(); // Prevent the default form submission
-    let form = $("#contact-form");
-    let url = form.attr("action");
-    let data = form.serialize();
-
-    $.ajax({
-      url: url,
-      type: "POST",
-      data: data,
-      success: function (response) {
-        Swal.fire({
-          title: "Your message has been sent!",
-          text: "Thank you for reaching out to us. We will get back to you shortly.",
-          icon: "success",
-        });
-        form.trigger("reset"); // Clear the form
-      },
-      error: function (xhr) {
-        let errorMessage = "An error occurred. Please try again.";
-        if (xhr.responseJSON && xhr.responseJSON.detail) {
-          errorMessage = xhr.responseJSON.detail;
-        } else if (xhr.responseJSON) {
-          errorMessage = Object.values(xhr.responseJSON).join("<br>");
-        }
-        Swal.fire({
-          title: "Error",
-          html: errorMessage,
-          icon: "error",
-        });
-      },
-    });
-  });
-});
-
-</script>
-<!-- contact form end -->
   </body>
 </html>
