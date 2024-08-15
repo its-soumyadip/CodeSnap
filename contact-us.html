@@ -35,6 +35,8 @@
   <!--custom css start-->
   <link rel="stylesheet" href="assets/css/custom.css" />
   <!--custom css end-->
+
+
 </head>
 
 <body>
@@ -197,7 +199,7 @@
               </div>
 
               <div class="h-25">
-                <a class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16 " id ="chat-with-us">Chat
+                <a class="btn it-company-bg ca-two-bg-hover-two rounded-5 text-white fs-16" id="chat-with-us">Chat
                   with us</a>
               </div>
             </div>
@@ -457,16 +459,7 @@
   <!--endbuild-->
 
 
-  <!-- JavaScript to Open Tidio Chat Widget -->
-  <script>
-    document.getElementById('chat-with-us').addEventListener('click', function () {
-      if (window.tidioChatApi) {
-        window.tidioChatApi.open();
-      } else {
-        console.error('Tidio chat API is not loaded yet.');
-      }
-    });
-  </script>
+
 
   <script>
     document.getElementById("current-year").textContent =
@@ -515,8 +508,31 @@
   </script>
   <!-- contact form end -->
 
-  <script id="messenger-widget-b" src="https://cdn.botpenguin.com/website-bot.js"
-  defer>66b4f6e62f7fbe307458098c,66b4f59e7df117d9fe3bd654</script>
+    <!-- Chat Bot Load Start -->
+
+    <script id="messenger-widget-b" src="https://cdn.botpenguin.com/website-bot.js"
+    defer>66b4f6e62f7fbe307458098c, 66b4f59e7df117d9fe3bd654</script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Function to open the Bot Penguin chatbot
+        function openChatBot() {
+          if (typeof window.BotPenguin !== 'undefined' && window.BotPenguin.open) {
+            window.BotPenguin.open(); // Open the chatbot widget
+          } else {
+            console.error('BotPenguin is not available.');
+          }
+        }
+    
+        // Add event listener to the button
+        document.getElementById('chat-with-us').addEventListener('click', openChatBot);
+      });
+    </script>
+    
+
+  <!-- Chat Bot Load End -->
+
+
 </body>
 
 </html>
