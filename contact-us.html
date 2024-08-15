@@ -508,27 +508,39 @@
   </script>
   <!-- contact form end -->
 
-    <!-- Chat Bot Load Start -->
+  <!-- Chat Bot Load Start -->
 
-    <script async id="messenger-widget-b" src="https://cdn.botpenguin.com/website-bot.js"
+  <script async id="messenger-widget-b" src="https://cdn.botpenguin.com/website-bot.js"
     defer>66b4f6e62f7fbe307458098c,66b4f59e7df117d9fe3bd654</script>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        // Function to open the Bot Penguin chatbot
-        function openChatBot() {
-          if (typeof window.BotPenguin !== 'undefined' && window.BotPenguin.open) {
-            window.BotPenguin.open(); // Open the chatbot widget
+        var chatButton = document.getElementById('chat-with-us');
+        chatButton.addEventListener('click', function(e) {
+          e.preventDefault(); // Prevent the default anchor behavior
+          
+          // Try to find the BotPenguin widget
+          var botPenguinWidget = document.querySelector('[id^="botpenguin-"]');
+          if (botPenguinWidget) {
+            // If found, click it
+            botPenguinWidget.click();
           } else {
-            console.error('BotPenguin is not available.');
+            console.error('BotPenguin widget not found');
+            
+            // Fallback: try to find any element that looks like it might be the chat opener
+            var possibleChatOpeners = document.querySelectorAll('div[class*="chat"], div[class*="bot"], div[id*="chat"], div[id*="bot"]');
+            if (possibleChatOpeners.length > 0) {
+              possibleChatOpeners[0].click();
+            } else {
+              console.error('No possible chat openers found');
+            }
           }
-        }
-    
-        // Add event listener to the button
-        document.getElementById('chat-with-us').addEventListener('click', openChatBot);
+        });
       });
     </script>
-    
+
+
+
 
   <!-- Chat Bot Load End -->
 
