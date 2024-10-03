@@ -1,0 +1,224 @@
+.services-heading {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.services-heading::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: -7px;
+  left: 0;
+  background-color: #FFBE3D;
+  /* Change to your preferred underline color */
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.services-heading:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/* General Styling */
+.PrivacyPolicySection {
+  margin: 100px 10px;
+}
+
+.privacy_heading {
+  background-color: #FFBE3D;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.para,
+.list_items {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+  .PrivacyPolicySection {
+    margin: 100px 30px;
+  }
+
+  .privacy_heading {
+    font-size: 24px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .PrivacyPolicySection {
+    margin: 100px 50px;
+  }
+
+  .privacy_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .PrivacyPolicySection {
+    margin: 120px 80px;
+  }
+
+  .privacy_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+}
+
+.TermsAndConditionsSection {
+  margin: 100px 10px;
+}
+
+
+.terms_heading {
+  background-color: #FFBE3D;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+  .TermsAndConditionsSection {
+    margin: 100px 30px;
+  }
+
+  .terms_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .TermsAndConditionsSection {
+    margin: 100px 50px;
+  }
+
+  .terms_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .TermsAndConditionsSection {
+    margin: 120px 80px;
+  }
+
+  .terms_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.CookiePolicySection {
+  margin: 100px 10px;
+}
+
+
+.cookie_heading {
+  background-color: #FFBE3D;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+  .CookiePolicySection {
+    margin: 100px 30px;
+  }
+
+  .cookie_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .CookiePolicySection {
+    margin: 100px 50px;
+  }
+
+  .cookie_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .CookiePolicySection {
+    margin: 120px 80px;
+  }
+
+  .cookie_heading {
+    font-size: 25px;
+  }
+
+  .para,
+  .list_items {
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+}
