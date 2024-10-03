@@ -1230,9 +1230,12 @@ function changeDarkImage() {
   let theme = localStorage.getItem("theme");
 
   if (theme == "dark") {
+    console.log("dark");
     document.getElementById("footer-logo").src =
-      "assets/img/CodeSnap_Logo_White.svg";
+      "/assets/img/CodeSnap_Logo_White.svg";
   } else {
-    document.getElementById("footer-logo").src = "assets/img/CodeSnap_Logo.svg";
+    console.log("light");
+    document.getElementById("footer-logo").src =
+      "/assets/img/CodeSnap_Logo.svg";
   }
 }
