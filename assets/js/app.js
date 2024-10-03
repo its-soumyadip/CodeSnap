@@ -1217,7 +1217,22 @@ jQuery(function ($) {
       setDarkMode(false);
     }
     var toggleButton = document.querySelector(".tt-theme-toggle");
-    toggleButton && toggleButton.addEventListener("click", toggleDarkMode);
+    toggleButton &&
+      toggleButton.addEventListener("click", () => {
+        toggleDarkMode();
+        changeDarkImage();
+      });
   };
   initDarkMode();
 });
+
+function changeDarkImage() {
+  let theme = localStorage.getItem("theme");
+
+  if (theme == "dark") {
+    document.getElementById("footer-logo").src =
+      "assets/img/CodeSnap_Logo_White.svg";
+  } else {
+    document.getElementById("footer-logo").src = "assets/img/CodeSnap_Logo.svg";
+  }
+}
